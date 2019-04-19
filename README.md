@@ -12,18 +12,6 @@ The dataset used here is the FLICKR 8K which consists of around 8091 images alon
 Loading VGG16 model and weights to extract features from the images
 The pre-trained weights for the VGG-16 model can be downloaded from [here](https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels.h5). The concept of transfer learning is applied here that uses features of the vgg16 model to embed images which is then fed to the LSTM network.
 
-Baseline Model Details:
-# Input shape of image tensor (no of samples, features) : (49631, 4096)
-# Input shape of text tensor (no of samples, features)
-(#samples,vocab_size = 30)
-# Output shape of text tensor
-(#samples, vocab_size = 30)
-# Hyper parameters
-Epochs : 6
-Batch Size : 32
-loss func = categorical_crossentropy
-optimizer = adam
-
 
 # Instructions to run the demo GUI
 Install following :
@@ -38,6 +26,13 @@ Install following :
 Run gui gui.py and play around with the UI
 ### Code
 All the code files are attached.
+
+vgg16 weights link : https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels.h5
+
+lstm improved model weights link : https://drive.google.com/open?id=1ZJEOmuPEAfa3siap8xH0cKY7zTyJchX9
+
+image captioning demo folder link : https://drive.google.com/open?id=1YpueFyhq-XNyzxaJiyfjC42LlPea7G0s
+
 ### Video Link
 YouTube Link : https://youtu.be/gjSIUrqGits
 STEPS:
